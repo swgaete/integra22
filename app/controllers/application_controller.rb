@@ -43,7 +43,7 @@ class ApplicationController < ActionController::Base
                 "version" => ""
     }
     respuesta['metadata']={'total' => cantidad['data']['media_count']}
-    respuesta['version'] = '2.0'
+    respuesta['version'] = '2.1'
     media['data'].each do |item| 
     respuesta['posts']<<{
      'tags'=> item['tags'],
